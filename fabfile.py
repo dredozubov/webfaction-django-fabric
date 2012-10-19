@@ -16,7 +16,7 @@ def deploy(branch='master'):
     checkout(branch, 'rsync -auv * %s' % env.codedir)
 
     with lcd(env.codedir):
-        local('pip install -r requirements/production.txt')
+        virtualenv('pip install -r requirements/production.txt')
         virtualenv('./manage.py collectstatic')
     local('%s/webapps/%s/bin/restart' % (env.home, env.projectname))
 
