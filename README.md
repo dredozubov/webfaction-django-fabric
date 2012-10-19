@@ -13,3 +13,7 @@ Basically consists of:
 
 ## Installation
 copy to project root folder, change the variables in fabsettings.py
+
+## Deployment
+    fab deploy:<branch>
+
