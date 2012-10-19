@@ -6,7 +6,7 @@ Fabric deployment script which i use on webfaction.
 ## Description
 Basically consists of:
 * pulling the code
-* activating branch(just call 'fab deploy' for master)
+* activating branch(just call 'fab deploy' for master) and rsync'ing content
 * installing requirements
 * manage.py collectstatic
 * restart
